@@ -6,7 +6,7 @@ atom-pane .tab-bar {
     }
 
     .close-icon {
-      margin-left: 4px;
+      margin-left: 10px;
       margin-right: auto;
       right: auto !important;
     }
@@ -21,22 +21,6 @@ atom-pane .tab-bar {
     &.modified:not(:hover) .close-icon, .close-icon {
       right: initial;
     }
-
-    // Size tabs to fit available space
-    &.active[data-type="TextEditor"],
-    &.active[data-type="SettingsView"],
-    &.active[data-type="AboutView"],
-    & {
-      max-width: none;
-      min-width: initial;
-      width: auto;
-      padding: 0;
-    }
-    flex: 1 0 auto;
-    &.active {
-      flex: 1 0 auto;
-    }
-  }
 
   // Don't show blue indicator in an empty tab-bar
   &:empty:before {
